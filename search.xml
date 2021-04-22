@@ -443,4 +443,139 @@
         <tag>树莓派</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Hexo介绍</title>
+    <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
+    <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="2-如何使用Hexo？"><a href="#2-如何使用Hexo？" class="headerlink" title="2 如何使用Hexo？"></a>2 如何使用Hexo？</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><h4 id="2-1-1-安装前提"><a href="#2-1-1-安装前提" class="headerlink" title="2.1.1 安装前提"></a>2.1.1 安装前提</h4><p>在安装Hexo前，需要确保你已安装<a href="http://git-scm.com/">Git</a>和<a href="https://nodejs.org/zh-cn/download/">Node.js</a>。</p>
+<h4 id="2-1-2-安装Git"><a href="#2-1-2-安装Git" class="headerlink" title="2.1.2 安装Git"></a>2.1.2 安装Git</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Git</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Git</button></li><li class="tab"><button type="button" data-href="#-3">Linux(Ubuntu, Debian)安装Git</button></li><li class="tab"><button type="button" data-href="#-4">Linux(Fedora, Red Hat, CentOS)安装Git</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>下载并安装<a href="https://git-scm.com/download/win">Git</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 或者下载 <a href="http://sourceforge.net/projects/git-osx-installer/">安装程序</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo yum install git-core</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-3-安装Node-js"><a href="#2-1-3-安装Node-js" class="headerlink" title="2.1.3 安装Node.js"></a>2.1.3 安装Node.js</h4><div class="tabs" id=""><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#-1">Windows安装Node.js</button></li><li class="tab"><button type="button" data-href="#-2">Mac安装Node.js</button></li><li class="tab"><button type="button" data-href="#-3">Linux(DEB/RPM-based)安装Node.js</button></li><li class="tab"><button type="button" data-href="#-4">其他方式安装Node.js</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="-1"><p>通过 <a href="https://github.com/jasongin/nvs/">nvs</a> 或者<a href="https://github.com/nvm-sh/nvm">nvm</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-2"><p>使用 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>, <a href="http://www.macports.org/">MacPorts</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-3"><p>从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 安装。</p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="-4"><p>使用相应的软件包管理器进行安装，可以参考 Node.js的<a href="https://nodejs.org/zh-cn/download/package-manager/">下载指导</a></p><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<h4 id="2-1-4-安装Hexo"><a href="#2-1-4-安装Hexo" class="headerlink" title="2.1.4 安装Hexo"></a>2.1.4 安装Hexo</h4><p>完成安装前提后，即可使用npm来安装Hexo。</p>
+<p>鼠标右键单击选择Git Bash，打开终端，输入以下命令进行安装：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，输入以下命令检查安装是否成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>成功后则会显示具体版本号，大致如下所示：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 ~/Desktop </span><br><span class="line">$ hexo -v</span><br><span class="line">hexo-cli: 4.2.0</span><br><span class="line">os: Windows_NT 6.1.7601 win32 x64</span><br><span class="line">node: 12.16.2</span><br><span class="line">v8: 7.8.279.23-node.34</span><br><span class="line">uv: 1.34.2</span><br><span class="line">zlib: 1.2.11</span><br><span class="line">brotli: 1.0.7</span><br><span class="line">ares: 1.15.0</span><br><span class="line">modules: 72</span><br><span class="line">nghttp2: 1.40.0</span><br><span class="line">napi: 5</span><br><span class="line">llhttp: 2.0.4</span><br><span class="line">http_parser: 2.9.3</span><br><span class="line">openssl: 1.1.1e</span><br><span class="line">cldr: 36.0</span><br><span class="line">icu: 65.1</span><br><span class="line">tz: 2019c</span><br><span class="line">unicode: 12.1</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-1-5-Node-js版本限制"><a href="#2-1-5-Node-js版本限制" class="headerlink" title="2.1.5 Node.js版本限制"></a>2.1.5 Node.js版本限制</h4><p>Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Hexo 版本</th>
+<th align="left">最低兼容 Node.js 版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">5.0+</td>
+<td align="left">10.13.0</td>
+</tr>
+<tr>
+<td align="left">4.1 - 4.2</td>
+<td align="left">8.10</td>
+</tr>
+<tr>
+<td align="left">4.0</td>
+<td align="left">8.6</td>
+</tr>
+<tr>
+<td align="left">3.3 - 3.9</td>
+<td align="left">6.9</td>
+</tr>
+<tr>
+<td align="left">3.2 - 3.3</td>
+<td align="left">0.12</td>
+</tr>
+<tr>
+<td align="left">3.0 - 3.1</td>
+<td align="left">0.10 or iojs</td>
+</tr>
+<tr>
+<td align="left">0.0.1 - 2.8</td>
+<td align="left">0.10</td>
+</tr>
+</tbody></table>
+<h3 id="2-2-建站"><a href="#2-2-建站" class="headerlink" title="2.2 建站"></a>2.2 建站</h3><h4 id="2-2-1-初始化"><a href="#2-2-1-初始化" class="headerlink" title="2.2.1 初始化"></a>2.2.1 初始化</h4><p>首先创建一个文件夹<code>HexoBlog</code>，用于存放所有建站的相关文件：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mkdir HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>然后在终端输入如下命令进行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init HexoBlog</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，提示信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lyl@lyl-PC MINGW64 /e/MyData </span><br><span class="line">$ hexo init HexoBlog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">added 190 packages from 160 contributors and audited 196 packages <span class="keyword">in</span> 53.858s</span><br><span class="line"></span><br><span class="line">15 packages are looking <span class="keyword">for</span> funding</span><br><span class="line">  run `npm fund` <span class="keyword">for</span> details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+
+<p><code>HexoBlog</code>文件夹目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules</span><br><span class="line">├── scaffolds</span><br><span class="line">|   ├── draft</span><br><span class="line">|   └── page</span><br><span class="line">|   └── post</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── hello-world.md</span><br><span class="line">└── themes</span><br><span class="line">└── .gitignore</span><br><span class="line">├── _config.landscape.yml</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── package-lock.json</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">文件/文件夹</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>node_modules</code></td>
+<td align="left">模块文件夹，存放下载的模块。</td>
+</tr>
+<tr>
+<td align="left"><code>scaffolds</code></td>
+<td align="left">模板文件夹，Hexo根据模板来新建文章或页面。</td>
+</tr>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">资源文件夹，存放用户资源。除<code>_posts</code>文件夹之外，开头命名为 <code>_ (下划线)的文件 / 文件夹</code>和隐藏的文件将会被忽略。</td>
+</tr>
+<tr>
+<td align="left"><code>themes</code></td>
+<td align="left">主题文件夹，Hexo根据主题生成静态页面。</td>
+</tr>
+<tr>
+<td align="left"><code>.gitignore</code></td>
+<td align="left">忽略文件模板，被忽略的文件不会进入版本控制。</td>
+</tr>
+<tr>
+<td align="left"><code>_config.landscape.yml</code></td>
+<td align="left">默认的主题配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>_config.yml</code></td>
+<td align="left">网站的配置信息</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息。<code>EJS</code>, <code>Stylus</code>和<code>Markdown renderer</code>已默认安装，可自由移除。</td>
+</tr>
+<tr>
+<td align="left"><code>package.json</code></td>
+<td align="left">应用程序的信息，锁定安装时的包的版本号，保证其他人在npm install时，依赖能保证一致。</td>
+</tr>
+</tbody></table>
+<h4 id="2-2-2-命令"><a href="#2-2-2-命令" class="headerlink" title="2.2.2 命令"></a>2.2.2 命令</h4><ol>
+<li>init(初始化)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 初始化一个名为FOLDER_NAME文件夹</span></span><br><span class="line">hexo init FOLDER_NAME</span><br></pre></td></tr></table></figure></li>
+<li>new(新建)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新建一篇名为POST_NAME的文章</span></span><br><span class="line">hexo new POST_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个title为About me的页面并指定路径</span></span><br><span class="line"><span class="comment"># 此时会在`source/about`下创建一个`me.md`文件</span></span><br><span class="line">hexo new page --path about/me <span class="string">&quot;About me&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建一个名为about的独立页面</span></span><br><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li>generate(编译生成)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编译生成</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure></li>
+<li>server(启动预览)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 启动预览</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></li>
+<li>deploy(部署)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment"># 简写</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+<li>clean(清除缓存)<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 清除缓存</span></span><br><span class="line">hexo clean</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="2-2-3-预览"><a href="#2-2-3-预览" class="headerlink" title="2.2.3 预览"></a>2.2.3 预览</h4><p>初始化完成后，就可以进行编译、预览来查看网站的效果了。</p>
+<p>终端输入如下命令进行编译、预览：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入HexoBlog</span></span><br><span class="line"><span class="built_in">cd</span> HexoBlog</span><br><span class="line"><span class="comment"># 编译并生成预览</span></span><br><span class="line">hexo s -g</span><br></pre></td></tr></table></figure>
+
+<p>浏览器输入<code>http://localhost:4000</code>查看效果：</p>
+<p><img src="https://i.loli.net/2021/04/22/kUVxGXuBYgFZejm.png" alt="Hexo预览.png"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
 </search>
