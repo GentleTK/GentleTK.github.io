@@ -934,63 +934,87 @@
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Note (Bootstrap Callout)</span></span><br><span class="line"><span class="comment"># style: simple/modern/flat/disable</span></span><br><span class="line"><span class="attr">note:</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">flat</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">border_radius:</span> <span class="number">3</span></span><br><span class="line">  <span class="attr">light_bg_offset:</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="5-10-1-default提示块标签"><a href="#5-10-1-default提示块标签" class="headerlink" title="5.10.1 default提示块标签"></a>5.10.1 default提示块标签</h4><ol>
-<li>simple<div class="note default simple"><p>default 提示块标签</p>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default simple %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default simple"><p>default 提示块标签</p>
 </div></li>
-<li>modern<div class="note default modern"><p>default 提示块标签</p>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default modern %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default modern"><p>default 提示块标签</p>
 </div></li>
-<li>flat<div class="note default flat"><p>default 提示块标签</p>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default flat %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default flat"><p>default 提示块标签</p>
 </div></li>
-<li>disable<div class="note default disable flat"><p>default 提示块标签</p>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default disable %&#125;</span><br><span class="line">default 提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note default disable flat"><p>default 提示块标签</p>
 </div></li>
 </ol>
 <h4 id="5-10-2-primary提示块标签"><a href="#5-10-2-primary提示块标签" class="headerlink" title="5.10.2 primary提示块标签"></a>5.10.2 primary提示块标签</h4><ol>
-<li>simple<div class="note primary simple"><p>primary提示块标签</p>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note primary simple %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary simple"><p>primary提示块标签</p>
 </div></li>
-<li>modern<div class="note primary modern"><p>primary提示块标签</p>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note primary modern %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary modern"><p>primary提示块标签</p>
 </div></li>
-<li>flat<div class="note primary flat"><p>primary提示块标签</p>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note primary flat %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary flat"><p>primary提示块标签</p>
 </div></li>
-<li>disable<div class="note primary disable flat"><p>primary提示块标签</p>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note primary disable %&#125;</span><br><span class="line">primary提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note primary disable flat"><p>primary提示块标签</p>
 </div></li>
 </ol>
 <h4 id="5-10-3-success提示块标签"><a href="#5-10-3-success提示块标签" class="headerlink" title="5.10.3 success提示块标签"></a>5.10.3 success提示块标签</h4><ol>
-<li>simple<div class="note success simple"><p>success提示块标签</p>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note success simple %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success simple"><p>success提示块标签</p>
 </div></li>
-<li>modern<div class="note success modern"><p>success提示块标签</p>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note success modern %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success modern"><p>success提示块标签</p>
 </div></li>
-<li>flat<div class="note success flat"><p>success提示块标签</p>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note success flat %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success flat"><p>success提示块标签</p>
 </div></li>
-<li>disable<div class="note success disable flat"><p>success提示块标签</p>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note success disable %&#125;</span><br><span class="line">success提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note success disable flat"><p>success提示块标签</p>
 </div></li>
 </ol>
 <h4 id="5-10-4-info提示块标签"><a href="#5-10-4-info提示块标签" class="headerlink" title="5.10.4 info提示块标签"></a>5.10.4 info提示块标签</h4><ol>
-<li>simple<div class="note info simple"><p>info提示块标签签</p>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note info simple %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info simple"><p>info提示块标签签</p>
 </div></li>
-<li>modern<div class="note info modern"><p>info提示块标签签</p>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note info modern %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info modern"><p>info提示块标签签</p>
 </div></li>
-<li>flat<div class="note info flat"><p>info提示块标签签</p>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note info flat %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info flat"><p>info提示块标签签</p>
 </div></li>
-<li>disable<div class="note info disable flat"><p>info提示块标签签</p>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note info disable %&#125;</span><br><span class="line">info提示块标签签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note info disable flat"><p>info提示块标签签</p>
 </div></li>
 </ol>
 <h4 id="5-10-5-warning提示块标签"><a href="#5-10-5-warning提示块标签" class="headerlink" title="5.10.5 warning提示块标签"></a>5.10.5 warning提示块标签</h4><ol>
-<li>simple<div class="note warning simple"><p>warning提示块标签</p>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note warning simple %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning simple"><p>warning提示块标签</p>
 </div></li>
-<li>modern<div class="note warning modern"><p>warning提示块标签</p>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note warning modern %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning modern"><p>warning提示块标签</p>
 </div></li>
-<li>flat<div class="note warning flat"><p>warning提示块标签</p>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note warning flat %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning flat"><p>warning提示块标签</p>
 </div></li>
-<li>disable<div class="note warning disable flat"><p>warning提示块标签</p>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note warning disable %&#125;</span><br><span class="line">warning提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note warning disable flat"><p>warning提示块标签</p>
 </div></li>
 </ol>
 <h4 id="5-10-6-danger提示块标签"><a href="#5-10-6-danger提示块标签" class="headerlink" title="5.10.6 danger提示块标签"></a>5.10.6 danger提示块标签</h4><ol>
-<li>simple<div class="note danger simple"><p>danger提示块标签</p>
+<li>simple样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note danger simple %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger simple"><p>danger提示块标签</p>
 </div></li>
-<li>modern<div class="note danger modern"><p>danger提示块标签</p>
+<li>modern样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note danger modern %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger modern"><p>danger提示块标签</p>
 </div></li>
-<li>flat<div class="note danger flat"><p>danger提示块标签</p>
+<li>flat样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note danger flat %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger flat"><p>danger提示块标签</p>
 </div></li>
-<li>disable<div class="note danger disable flat"><p>danger提示块标签</p>
+<li>disable样式<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note danger disable %&#125;</span><br><span class="line">danger提示块标签</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<div class="note danger disable flat"><p>danger提示块标签</p>
 </div></li>
 </ol>
 ]]></content>
