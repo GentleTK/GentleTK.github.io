@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Anaconda下安装opencv</title>
-    <url>/2020/03/25/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
-    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
-<p>新建Anaconda安装路径</p>
-<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
-<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
-<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
-<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
-<p>下载后进入对应目录，在命令行下输入</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
-
-<p>遇到如下问题</p>
-<p><img src="https://i.loli.net/2020/02/26/bFIkV72TXKwZH6a.png" alt="image-20200225234947762.png"></p>
-<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
-<p>下载第一个MSI安装即可</p>
-<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://i.loli.net/2020/02/26/8kdh7YQUlROzbTt.png" alt="image-20200225234900049.png"></p>
-<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo介绍</title>
     <url>/2020/02/23/Hexo%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<h2 id="1-Hexo是什么？"><a href="#1-Hexo是什么？" class="headerlink" title="1 Hexo是什么？"></a>1 Hexo是什么？</h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁且高效的博客框架。Hexo 使用 <code>Markdown</code>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
@@ -159,6 +133,32 @@
       <tags>
         <tag>技术</tag>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anaconda下安装opencv</title>
+    <url>/2020/03/25/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
+<p>新建Anaconda安装路径</p>
+<p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
+<h2 id="2-下载opencv文件"><a href="#2-下载opencv文件" class="headerlink" title="2.下载opencv文件"></a>2.下载opencv文件</h2><p><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">点我下载</a></p>
+<p>下载与当前环境兼容的<code>opencv</code>文件（<code>cp37</code>对应<code>python3.7</code>）</p>
+<p>如<code>opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</code></p>
+<p>下载后进入对应目录，在命令行下输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install opencv_python-4.2.0-cp37-cp37m-win_amd64.whl</span><br></pre></td></tr></table></figure>
+
+<p>遇到如下问题</p>
+<p><img src="https://i.loli.net/2020/02/26/bFIkV72TXKwZH6a.png" alt="image-20200225234947762.png"></p>
+<p><a href="https://slproweb.com/products/Win32OpenSSL.html">点我下载winopenssl</a></p>
+<p>下载第一个MSI安装即可</p>
+<h2 id="3-再次进入命令行输入命令"><a href="#3-再次进入命令行输入命令" class="headerlink" title="3.再次进入命令行输入命令"></a>3.再次进入命令行输入命令</h2><p><img src="https://i.loli.net/2020/02/26/8kdh7YQUlROzbTt.png" alt="image-20200225234900049.png"></p>
+<h1 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h1><p>拷贝<code>cv2.pyd</code>文件将OpenCV路径下的此文件<code>\opencv\build\python\cv2\python-3.76</code> 的 <code>.pyd</code>拷贝到:<code>\Anaconda\Lib\site-packages</code></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
