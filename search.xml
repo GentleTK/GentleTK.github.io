@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Anaconda下安装opencv</title>
-    <url>/2020/03/25/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
+    <url>/2020/03/29/Anaconda%E4%B8%8B%E5%AE%89%E8%A3%85opencv/</url>
     <content><![CDATA[<h1 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h1><h2 id="1-安装Anaconda并设置环境变量"><a href="#1-安装Anaconda并设置环境变量" class="headerlink" title="1.安装Anaconda并设置环境变量"></a>1.安装Anaconda并设置环境变量</h2><p>计算机-&gt;属性-&gt;高级-&gt;环境变量-&gt;Path</p>
 <p>新建Anaconda安装路径</p>
 <p>我的是：<code>D:\ProgramData\Anaconda3\Scripts</code></p>
@@ -524,7 +524,7 @@
   </entry>
   <entry>
     <title>基于树莓派的智能箱包开发环境搭建</title>
-    <url>/2020/03/10/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <url>/2020/03/08/%E5%9F%BA%E4%BA%8E%E6%A0%91%E8%8E%93%E6%B4%BE%E7%9A%84%E6%99%BA%E8%83%BD%E7%AE%B1%E5%8C%85%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h1 id="1-换源，更新"><a href="#1-换源，更新" class="headerlink" title="1.换源，更新"></a>1.换源，更新</h1><h2 id="1-1编辑软件源文件"><a href="#1-1编辑软件源文件" class="headerlink" title="1.1编辑软件源文件"></a>1.1编辑软件源文件</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 编辑source.list文件</span></span><br><span class="line">sudo nano /etc/apt/source.list</span><br></pre></td></tr></table></figure>
 
 <p>替换内容为：</p>
@@ -1028,7 +1028,7 @@
   </entry>
   <entry>
     <title>Proteus 7 Professional安装</title>
-    <url>/2020/03/11/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
+    <url>/2020/03/15/Proteus%207%20Professional%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h2 id="1以管理员身份运行P7-8sp2-exe"><a href="#1以管理员身份运行P7-8sp2-exe" class="headerlink" title="1以管理员身份运行P7.8sp2.exe"></a>1以管理员身份运行P7.8sp2.exe</h2><h3 id="1-1-安装欢迎界面"><a href="#1-1-安装欢迎界面" class="headerlink" title="1.1 安装欢迎界面"></a>1.1 安装欢迎界面</h3><p><img src="https://i.loli.net/2021/04/25/QWU9bpsO2PJI5wN.png" alt="安装欢迎界面"></p>
 <h3 id="1-2-许可证书界面"><a href="#1-2-许可证书界面" class="headerlink" title="1.2 许可证书界面"></a>1.2 许可证书界面</h3><p><img src="https://i.loli.net/2021/04/25/gaerE4dZs1k8i6R.png" alt="证书许可界面"></p>
 <h3 id="1-3-选择从本地安装许可证"><a href="#1-3-选择从本地安装许可证" class="headerlink" title="1.3 选择从本地安装许可证"></a>1.3 选择从本地安装许可证</h3><p><img src="https://i.loli.net/2021/04/25/1dTnpNSIkCe6cqj.png" alt="选择本地许可证"></p>
@@ -1067,7 +1067,7 @@
   </entry>
   <entry>
     <title>兼容C51与STM32的Keil5安装方法</title>
-    <url>/2020/03/09/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
+    <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
 <p><img src="https://i.loli.net/2021/04/25/NTwplyZgHvzRShm.png" alt="c51选择路径"></p>
 <p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
