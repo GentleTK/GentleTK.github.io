@@ -43,6 +43,34 @@
   </entry>
   
   <entry>
+    <title>基于jsDelivr+GitHub的免费CDN服务</title>
+    <link href="https://gentletk.gitee.io/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN%E6%9C%8D%E5%8A%A1/"/>
+    <id>https://gentletk.gitee.io/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN%E6%9C%8D%E5%8A%A1/</id>
+    <published>2020-04-19T08:31:55.000Z</published>
+    <updated>2020-04-19T09:19:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p><h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p><p><img src="https://i.loli.net/2021/04/27/IQl75DGzUwhXtoJ.png" alt="image-20210427173025722"></p><p>复制红框中的仓库地址，然后克隆到本地：</p><p><img src="https://i.loli.net/2021/04/27/9lUzEBdCKLAj56F.png" alt="image-20210427173234061"></p><p><img src="https://i.loli.net/2021/04/27/i2Jt5wgfre1hUFj.png" alt="image-20210427173334658"></p><h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2021/04/27/RolDteAfWsUTCzy.png" alt="image-20210427173516617"></p><h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p><p><img src="https://i.loli.net/2021/04/27/8S6KcLkfHqQstI9.png" alt="image-20210427173607514"></p><p>点击<code>Punlish release</code>进行发布：</p><p><img src="https://i.loli.net/2021/04/27/cuamzEKbwksPMSW.png" alt="image-20210427173703992"></p><h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol><li><p>获取指定版本的资源</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure><p>以访问<code>emoji</code>表情包为例：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p></li><li><p>获取最新版本的资源</p><div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure><p>以访问<code>emoji</code>表情包为例：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-什么是CDN？&quot;&gt;&lt;a href=&quot;#1-什么是CDN？&quot; class=&quot;headerlink&quot; title=&quot;1 什么是CDN？&quot;&gt;&lt;/a&gt;1 什么是CDN？&lt;/h2&gt;&lt;p&gt;&lt;code&gt;CDN(Content Delivery  Network，即内容分发网</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://gentletk.gitee.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="https://gentletk.gitee.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="GitHub" scheme="https://gentletk.gitee.io/tags/GitHub/"/>
+    
+    <category term="jsDelivr" scheme="https://gentletk.gitee.io/tags/jsDelivr/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Git使用教程</title>
     <link href="https://gentletk.gitee.io/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     <id>https://gentletk.gitee.io/2020/04/12/Git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>

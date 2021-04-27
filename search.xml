@@ -702,6 +702,52 @@
       </tags>
   </entry>
   <entry>
+    <title>兼容C51与STM32的Keil5安装方法</title>
+    <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/NTwplyZgHvzRShm.png" alt="c51选择路径"></p>
+<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
+<p><img src="https://i.loli.net/2021/04/25/Iu72ALs4ZiQkM8z.png" alt="c51注册信息"></p>
+<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/TbCexVgS2iRqfBU.png" alt="c51去掉勾选"></p>
+<h2 id="2-安装mdk514-exe"><a href="#2-安装mdk514-exe" class="headerlink" title="2 安装mdk514.exe"></a>2 安装mdk514.exe</h2><p>以管理员身份运行<code>mdk514.exe</code>文件,进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/5963AilzuDndVRe.png" alt="32选择路径"></p>
+<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
+<p><img src="https://i.loli.net/2021/04/25/TwKdVufLg5qI8UZ.png" alt="32注册信息"></p>
+<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/7CnfM3cZ4mkLzFy.png" alt="32去掉勾选"></p>
+<p>出现<code>Pack Installer</code>界面直接关掉即可(点击<code>OK</code>，出现弹窗后再点击<code>是</code>)</p>
+<p><img src="https://i.loli.net/2021/04/25/3c8yFMZuOQ2rDpT.png" alt="pack安装界面"></p>
+<h2 id="3-C51与STM32共存"><a href="#3-C51与STM32共存" class="headerlink" title="3 C51与STM32共存"></a>3 C51与STM32共存</h2><p>打开<code>C51</code>安装路径，复制整个<code>C51</code>文件夹到<code>Keil_v5</code>下：</p>
+<p><img src="https://i.loli.net/2021/04/25/XZSqTLi2k4eH9A5.png" alt="c51文件夹"></p>
+<p><img src="https://i.loli.net/2021/04/25/ergNcRzdbuvEYlJ.png" alt="c51复制到keil5"></p>
+<p>打开<code>C51</code>安装路径下的<code>UV4</code>文件夹，全选并复制，然后粘贴到<code>Keil_v5</code>下的<code>UV4</code>文件夹里，提示冲突的话就选择跳过，然后打开<code>C51</code>安装路径下的<code>TOOLS.INI</code>文件，复制里面所有内容，然后粘贴到<code>Keil_v5</code>下的<code>TOOLS.INI</code>最后一行，然后将复制过来的内容里的PATH改成当前的路径：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 未改动前</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\MDK\C51&quot;</span></span><br><span class="line"><span class="comment"># 改动后</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\Keil_v5\C51&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>改动完成后<code>Ctrl+s</code>保存文件。</p>
+<h2 id="4-破解"><a href="#4-破解" class="headerlink" title="4 破解"></a>4 破解</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，以管理员身份运行<code>UV4.exe</code>。</p>
+<p><img src="https://i.loli.net/2021/04/25/C3fJkO2mPdsbahq.png" alt="打开UV4"></p>
+<p>点击左上角<code>File</code>-&gt;<code>License Management</code>，复制<code>CID</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/kptxfhXaewPKqy9.png" alt="licenseManagement"></p>
+<p>以管理员身份运行<code>keygen.exe</code>，将复制CID粘贴到里面点击<code>Generate</code></p>
+<p><img src="https://i.loli.net/2021/04/25/dcbi6E7Up8g4xyD.png" alt="c51keygen"></p>
+<p>将生成的序列号复制到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/695urvBjHZS8tkd.png" alt="c51注册成功"></p>
+<p>然后将<code>Target</code>选择为<code>ARM</code>，再点击<code>Generate</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/Yt2p8cW1sMy7uiZ.png" alt="32keygen"></p>
+<p>并将生成的序列号复制粘贴到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
+<p><img src="https://i.loli.net/2021/04/25/tsE5eFuxcg6NOZJ.png" alt="32注册成功"></p>
+<h2 id="5-添加快捷方式"><a href="#5-添加快捷方式" class="headerlink" title="5 添加快捷方式"></a>5 添加快捷方式</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，右键单击<code>UV4.exe</code>，选择发送到桌面快捷方式，将快捷方式命名为<code>Keil uVision5</code>即可。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Keil</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Hexo的免费个人网站</title>
     <url>/2020/02/23/%E5%9F%BA%E4%BA%8EHexo%E7%9A%84%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<h1 id="先聊聊Gitee和GitHub的Pages服务"><a href="#先聊聊Gitee和GitHub的Pages服务" class="headerlink" title="先聊聊Gitee和GitHub的Pages服务"></a>先聊聊Gitee和GitHub的Pages服务</h1><p>今天跟大家分享一下利用Hexo+Gitee Pages搭建个人网站的一些经验，之所以用Gitee Pages而不是GitHub Pages，完全是因为GitHub的服务器在国外，国内访问速度慢到令人发指！！不过GitHub虽然慢，但人家不要钱啊，而且你完全能在阿里花一块钱买个域名绑定一下，比如我的：gentletk.top这样你的网站就看起来就有私人定制的那种高端感了。至于Gitee，虽然快，但你每次都得手动部署，而且它不支持自定义域名，你要访问的话只有老老实实访问gentletk.gitee.io，这样一看就有种廉价感。当然，如果你愿意充钱，Gitee是很乐意为你推荐他们的Gitee Pages Pro服务的，这样一来自动更新部署和自定义域名都无需你操心了。我原先选择的是GitHub Pages，其实它没什么不好，慢是因为我在国内，所以我不打算放弃它，来个双管齐下，国内访问:gentletk.gitee.io，国外访问:gentletk.top。</p>
@@ -816,49 +862,51 @@
       </tags>
   </entry>
   <entry>
-    <title>兼容C51与STM32的Keil5安装方法</title>
-    <url>/2020/03/22/%E5%85%BC%E5%AE%B9C51%E4%B8%8ESTM32%E7%9A%84Keil5%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h2 id="1-安装C51V900-exe"><a href="#1-安装C51V900-exe" class="headerlink" title="1 安装C51V900.exe"></a>1 安装C51V900.exe</h2><p>以管理员身份运行<code>C51V900.exe</code>文件，进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/NTwplyZgHvzRShm.png" alt="c51选择路径"></p>
-<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
-<p><img src="https://i.loli.net/2021/04/25/Iu72ALs4ZiQkM8z.png" alt="c51注册信息"></p>
-<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/TbCexVgS2iRqfBU.png" alt="c51去掉勾选"></p>
-<h2 id="2-安装mdk514-exe"><a href="#2-安装mdk514-exe" class="headerlink" title="2 安装mdk514.exe"></a>2 安装mdk514.exe</h2><p>以管理员身份运行<code>mdk514.exe</code>文件,进入安装欢迎界面点击<code>Next</code>，勾选<code>agree</code>然后点<code>Next</code>，进入选择安装路径界面，确定安装路径，然后点击<code>Next</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/5963AilzuDndVRe.png" alt="32选择路径"></p>
-<p>注册信息敲空格就行，然后点击<code>Next</code>开始安装：</p>
-<p><img src="https://i.loli.net/2021/04/25/TwKdVufLg5qI8UZ.png" alt="32注册信息"></p>
-<p>安装完成后去掉勾选，点击<code>Finish</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/7CnfM3cZ4mkLzFy.png" alt="32去掉勾选"></p>
-<p>出现<code>Pack Installer</code>界面直接关掉即可(点击<code>OK</code>，出现弹窗后再点击<code>是</code>)</p>
-<p><img src="https://i.loli.net/2021/04/25/3c8yFMZuOQ2rDpT.png" alt="pack安装界面"></p>
-<h2 id="3-C51与STM32共存"><a href="#3-C51与STM32共存" class="headerlink" title="3 C51与STM32共存"></a>3 C51与STM32共存</h2><p>打开<code>C51</code>安装路径，复制整个<code>C51</code>文件夹到<code>Keil_v5</code>下：</p>
-<p><img src="https://i.loli.net/2021/04/25/XZSqTLi2k4eH9A5.png" alt="c51文件夹"></p>
-<p><img src="https://i.loli.net/2021/04/25/ergNcRzdbuvEYlJ.png" alt="c51复制到keil5"></p>
-<p>打开<code>C51</code>安装路径下的<code>UV4</code>文件夹，全选并复制，然后粘贴到<code>Keil_v5</code>下的<code>UV4</code>文件夹里，提示冲突的话就选择跳过，然后打开<code>C51</code>安装路径下的<code>TOOLS.INI</code>文件，复制里面所有内容，然后粘贴到<code>Keil_v5</code>下的<code>TOOLS.INI</code>最后一行，然后将复制过来的内容里的PATH改成当前的路径：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 未改动前</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\MDK\C51&quot;</span></span><br><span class="line"><span class="comment"># 改动后</span></span><br><span class="line">[c51]</span><br><span class="line">PATH=<span class="string">&quot;D:\Tools\Keil_v5\C51&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>基于jsDelivr+GitHub的免费CDN服务</title>
+    <url>/2020/04/19/%E5%9F%BA%E4%BA%8EjsDelivr+GitHub%E7%9A%84%E5%85%8D%E8%B4%B9CDN%E6%9C%8D%E5%8A%A1/</url>
+    <content><![CDATA[<h2 id="1-什么是CDN？"><a href="#1-什么是CDN？" class="headerlink" title="1 什么是CDN？"></a>1 什么是CDN？</h2><p><code>CDN(Content Delivery  Network，即内容分发网络)</code>，是构建在网络之上的内容分发网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。而<code>jsDelivr</code>是一个免费、开放原始码的公有<code> CDN</code> 服务，总的来说，<code>jsDelivr</code> + <code>GitHub</code>是免费且好用的<code>CDN</code>服务，非常适合博客网站使用。</p>
+<h2 id="2-创建cdn-assets仓库"><a href="#2-创建cdn-assets仓库" class="headerlink" title="2 创建cdn-assets仓库"></a>2 创建cdn-assets仓库</h2><p>登陆你的<a href="https://www.github.com/">GitHub</a>，创建一个名为<code>cdn-assets</code>的<code>公有仓库</code>用于存放你的静态资源文件。</p>
+<p><img src="https://i.loli.net/2021/04/27/IQl75DGzUwhXtoJ.png" alt="image-20210427173025722"></p>
+<p>复制红框中的仓库地址，然后克隆到本地：</p>
+<p><img src="https://i.loli.net/2021/04/27/9lUzEBdCKLAj56F.png" alt="image-20210427173234061"></p>
+<p><img src="https://i.loli.net/2021/04/27/i2Jt5wgfre1hUFj.png" alt="image-20210427173334658"></p>
+<h2 id="3-提交并推送到GitHub"><a href="#3-提交并推送到GitHub" class="headerlink" title="3 提交并推送到GitHub"></a>3 提交并推送到GitHub</h2><p>在本地文件夹<code>cdn-assets</code>中添加你的静态资源文件，然后提交并推送到GitHub：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git commit -m <span class="string">&quot;add cdn source files.&quot;</span></span><br><span class="line"><span class="comment"># 推送到远程仓库</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
 
-<p>改动完成后<code>Ctrl+s</code>保存文件。</p>
-<h2 id="4-破解"><a href="#4-破解" class="headerlink" title="4 破解"></a>4 破解</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，以管理员身份运行<code>UV4.exe</code>。</p>
-<p><img src="https://i.loli.net/2021/04/25/C3fJkO2mPdsbahq.png" alt="打开UV4"></p>
-<p>点击左上角<code>File</code>-&gt;<code>License Management</code>，复制<code>CID</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/kptxfhXaewPKqy9.png" alt="licenseManagement"></p>
-<p>以管理员身份运行<code>keygen.exe</code>，将复制CID粘贴到里面点击<code>Generate</code></p>
-<p><img src="https://i.loli.net/2021/04/25/dcbi6E7Up8g4xyD.png" alt="c51keygen"></p>
-<p>将生成的序列号复制到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/695urvBjHZS8tkd.png" alt="c51注册成功"></p>
-<p>然后将<code>Target</code>选择为<code>ARM</code>，再点击<code>Generate</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/Yt2p8cW1sMy7uiZ.png" alt="32keygen"></p>
-<p>并将生成的序列号复制粘贴到<code>New License ID Code</code>，点击<code>Add LIC</code>：</p>
-<p><img src="https://i.loli.net/2021/04/25/tsE5eFuxcg6NOZJ.png" alt="32注册成功"></p>
-<h2 id="5-添加快捷方式"><a href="#5-添加快捷方式" class="headerlink" title="5 添加快捷方式"></a>5 添加快捷方式</h2><p>打开<code>Keil_v5</code>安装路径下的<code>UV4</code>文件夹，右键单击<code>UV4.exe</code>，选择发送到桌面快捷方式，将快捷方式命名为<code>Keil uVision5</code>即可。</p>
+<p><img src="https://i.loli.net/2021/04/27/RolDteAfWsUTCzy.png" alt="image-20210427173516617"></p>
+<h2 id="4-发布cdn-assets版本"><a href="#4-发布cdn-assets版本" class="headerlink" title="4 发布cdn-assets版本"></a>4 发布cdn-assets版本</h2><p>点击<code>Create a new release</code>，创建一个<code>cdn-assets</code>的发布版本：</p>
+<p><img src="https://i.loli.net/2021/04/27/8S6KcLkfHqQstI9.png" alt="image-20210427173607514"></p>
+<p>点击<code>Punlish release</code>进行发布：</p>
+<p><img src="https://i.loli.net/2021/04/27/cuamzEKbwksPMSW.png" alt="image-20210427173703992"></p>
+<h2 id="5-访问静态资源"><a href="#5-访问静态资源" class="headerlink" title="5 访问静态资源"></a>5 访问静态资源</h2><ol>
+<li><p>获取指定版本的资源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@版本号/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@1.0.0/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+<li><p>获取最新版本的资源</p>
+<div class="note warning flat"><p><code>@latest</code>也可不加，同样表示获取最新版本的资源。</p>
+</div>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GitHub用户名/仓库名@latest/文件路径</span><br></pre></td></tr></table></figure>
+
+<p>以访问<code>emoji</code>表情包为例：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/GentleTK/cdn-assets@latest/emoji/qq/qq-105.gif" alt="qq-105.gif"></p>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>技术</tag>
-        <tag>Keil</tag>
+        <tag>GitHub</tag>
+        <tag>jsDelivr</tag>
       </tags>
   </entry>
   <entry>
