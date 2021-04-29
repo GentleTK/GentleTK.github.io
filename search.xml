@@ -137,39 +137,6 @@
       </tags>
   </entry>
   <entry>
-    <title>AltiumDesigner绘制PCB(四)</title>
-    <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
-    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
-<p>本节主要教大家绘制电路原理图。</p>
-<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
-<p><img src="https://i.loli.net/2021/04/28/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
-<p><img src="https://i.loli.net/2021/04/28/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
-<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
-<p><img src="https://i.loli.net/2021/04/28/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
-<p><img src="https://i.loli.net/2021/04/28/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
-<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
-<p><img src="https://i.loli.net/2021/04/28/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
-<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
-<p><img src="https://i.loli.net/2021/04/28/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
-<p>按照矩阵键盘逻辑进行电气连线：</p>
-<p><img src="https://i.loli.net/2021/04/28/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
-<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
-<p><img src="https://i.loli.net/2021/04/28/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
-<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
-<p><img src="https://i.loli.net/2021/04/28/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
-<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
-<p><img src="https://i.loli.net/2021/04/28/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>AltiumDesigner</tag>
-        <tag>PCB</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AltiumDesigner绘制PCB(五)</title>
     <url>/2020/04/30/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E4%BA%94)/</url>
     <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
@@ -201,6 +168,39 @@
 <p><img src="https://i.loli.net/2021/04/28/lwsJa94uCDR861Y.png" alt="完成页面高级设置"></p>
 <p>点击顶部导航栏的生成当前文件的打印预览：</p>
 <p><img src="https://i.loli.net/2021/04/28/TCtPavL6XH9MdnD.png" alt="打印预览"></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>AltiumDesigner</tag>
+        <tag>PCB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AltiumDesigner绘制PCB(四)</title>
+    <url>/2020/04/29/AltiumDesigner%E7%BB%98%E5%88%B6PCB(%E5%9B%9B)/</url>
+    <content><![CDATA[<p>本教程以绘制<code>4x4</code>矩阵键盘为例，在绘制<code>PCB</code>前，请确保你已安装<code>Altium Designer</code>。</p>
+<p>本节主要教大家绘制电路原理图。</p>
+<h2 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1 准备工作"></a>1 准备工作</h2><p>在绘制电路原理图之前，还需要为器件的原理图添加封装。在左侧导航栏选中<code>matrixKeyboard.SchLib</code>进入原理图库界面，点击符号管理器，再选择要添加封装的器件，点击<code>Add Footprint</code>，输入你之前绘制的封装器件名称：</p>
+<p><img src="https://i.loli.net/2021/04/28/AUlHNsS3fpkVK7F.png" alt="符号管理器"></p>
+<p><img src="https://i.loli.net/2021/04/28/wt5XpZWainBqvYR.png" alt="为器件添加封装"></p>
+<p>依次添加完成后需要保存一下，然后点击右侧的库来查看原理图库的器件是不是都有封装：</p>
+<p><img src="https://i.loli.net/2021/04/28/tTvRw8IhcEFyasZ.png" alt="查看Key封装"></p>
+<p><img src="https://i.loli.net/2021/04/28/fmSuU6dZcxNlKnz.png" alt="查看Pin封装"></p>
+<h2 id="2-开始绘制"><a href="#2-开始绘制" class="headerlink" title="2 开始绘制"></a>2 开始绘制</h2><p>在左侧导航栏选中<code>matrixKeyboard.SchDoc</code>进入电路原理图绘制界面，在右侧的库中找到<code>matrixKeyboard.SchLib</code>，双击<code>Key</code>元器件，然后按一下<kbd>Tab</kbd>键进入元器件属性编辑界面：</p>
+<p><img src="https://i.loli.net/2021/04/28/PWHhlV4XtxUoc3g.png" alt="元器件属性编辑界面"></p>
+<p>然后依次排列成<code>4x4</code>矩阵形状：</p>
+<p><img src="https://i.loli.net/2021/04/28/zhNWYklindSxs5w.png" alt="4x4矩阵"></p>
+<p>按照矩阵键盘逻辑进行电气连线：</p>
+<p><img src="https://i.loli.net/2021/04/28/dA9Tyip3WlS8nqJ.png" alt="绘制完电路"></p>
+<h2 id="3-导出到PCB图"><a href="#3-导出到PCB图" class="headerlink" title="3 导出到PCB图"></a>3 导出到PCB图</h2><p>在顶部导航栏点击设计，选择<code>Update PCB Document matrixKeyboard.PcbDoc</code>导出到<code>PCB</code>图：</p>
+<p><img src="https://i.loli.net/2021/04/28/DmiQFYlruTRgw6S.png" alt="工程变更指令界面"></p>
+<p>点击验证变更，确保无误后再点击执行变更即可导出到<code>PCB</code>图：</p>
+<p><img src="https://i.loli.net/2021/04/28/R4EcFtSrJHqhGCW.png" alt="执行变更成功"></p>
+<p>导出后的元件被一个红框包裹着，单击选中红框后可以按<kbd>Del</kbd>键删掉：</p>
+<p><img src="https://i.loli.net/2021/04/28/LO8HoyjZGwBvM6h.png" alt="导出后的元件"></p>
 ]]></content>
       <categories>
         <category>技术</category>
